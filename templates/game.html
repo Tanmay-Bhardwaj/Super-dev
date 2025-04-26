@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Runner - Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="level-info">Level: <span id="level-name">Loading...</span></div>
+            <div class="lives">Lives: <span id="lives">3</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+        <div id="message-box" class="message-box hidden">
+            <h2 id="message-title">Level Complete!</h2>
+            <p id="message-text">You've collected all the code snippets and reached the server!</p>
+            <button id="next-level-btn">Next Level</button>
+            <button id="restart-btn">Restart Level</button>
+            <a href="/" class="menu-btn">Main Menu</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

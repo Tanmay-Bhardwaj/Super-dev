@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Runner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="title-screen">
+            <h1>CODE RUNNER</h1>
+            <p>Navigate through tech-themed levels, collect code snippets, and avoid bugs!</p>
+            
+            <div class="instructions">
+                <h2>How to Play</h2>
+                <ul>
+                    <li><strong>Left/Right Arrow Keys</strong> or <strong>A/D</strong>: Move</li>
+                    <li><strong>Space</strong> or <strong>W</strong>: Jump</li>
+                    <li>Collect code snippets to gain points</li>
+                    <li>Avoid bugs, viruses, and other tech threats</li>
+                    <li>Reach the endpoint (server) to complete each level</li>
+                </ul>
+            </div>
+            
+            <div class="characters">
+                <h2>Characters</h2>
+                <div class="character-info">
+                    <img src="{{ url_for('static', filename='img/player.png') }}" alt="Player" class="character-image">
+                    <p>Developer - Your character</p>
+                </div>
+                <div class="character-info">
+                    <img src="{{ url_for('static', filename='img/bug.png') }}" alt="Bug" class="character-image">
+                    <p>Bug - Avoid these pests!</p>
+                </div>
+                <div class="character-info">
+                    <img src="{{ url_for('static', filename='img/virus.png') }}" alt="Virus" class="character-image">
+                    <p>Virus - More dangerous than bugs</p>
+                </div>
+                <div class="character-info">
+                    <img src="{{ url_for('static', filename='img/code-snippet.png') }}" alt="Code Snippet" class="character-image">
+                    <p>Code Snippet - Collect for points</p>
+                </div>
+                <div class="character-info">
+                    <img src="{{ url_for('static', filename='img/malware.png') }}" alt="malware" class="character-image">
+                    <p>Code Snippet - Collect for points</p>
+                </div>
+                <div class="character-info">
+                    <img src="{{ url_for('static', filename='img/server.png') }}" alt="server" class="character-image">
+                    <p>Code Snippet - Collect for points</p>
+                </div>
+            </div>
+            
+            <a href="/game" class="start-button">START GAME</a>
+        </div>
+    </div>
+</body>
+</html>
