@@ -28,33 +28,10 @@ levels = [
         "endpoint": {"x": 700, "y": 270}  # Moved closer to last platform
     },
     
-    # Level 2: Zigzag pattern
-    {
-        "name": "Level 2: Data Pathways",
-        "platforms": [
-            {"x": 0, "y": 450, "width": 150, "height": 30},  # Spawn platform
-            {"x": 200, "y": 400, "width": 150, "height": 30},
-            {"x": 0, "y": 350, "width": 150, "height": 30},
-            {"x": 200, "y": 300, "width": 150, "height": 30},
-            {"x": 0, "y": 250, "width": 150, "height": 30},
-            {"x": 200, "y": 200, "width": 150, "height": 30},
-            {"x": 600, "y": 150, "width": 200, "height": 30}  # Platform near endpoint
-        ],
-        "collectibles": [
-            {"x": 75, "y": 420},
-            {"x": 275, "y": 370},
-            {"x": 75, "y": 320},
-            {"x": 275, "y": 270}
-        ],
-        "enemies": [
-            {"x": 100, "y": 370, "type": "virus", "movement": "vertical", "range": 50}
-        ],
-        "endpoint": {"x": 700, "y": 120}  # Moved closer to last platform
-    },
 
     # Level 3: Staircase pattern
     {
-        "name": "Level 3: Protocol Steps",
+        "name": "Level 2: Protocol Steps",
         "platforms": [
             {"x": 0, "y": 450, "width": 100, "height": 30},  # Spawn platform
             {"x": 150, "y": 400, "width": 100, "height": 30},
@@ -74,33 +51,9 @@ levels = [
         "endpoint": {"x": 650, "y": 220}  # Moved closer to last platform
     },
 
-    # Level 4: Pyramid pattern
-    {
-        "name": "Level 4: Security Layers",
-        "platforms": [
-            {"x": 0, "y": 450, "width": 100, "height": 30},  # Added spawn platform
-            {"x": 350, "y": 450, "width": 100, "height": 30},
-            {"x": 300, "y": 400, "width": 200, "height": 30},
-            {"x": 250, "y": 350, "width": 300, "height": 30},
-            {"x": 200, "y": 300, "width": 400, "height": 30},
-            {"x": 600, "y": 250, "width": 200, "height": 30}  # Platform near endpoint
-        ],
-        "collectibles": [
-            {"x": 400, "y": 420},
-            {"x": 400, "y": 370},
-            {"x": 400, "y": 320},
-            {"x": 400, "y": 270}
-        ],
-        "enemies": [
-            {"x": 300, "y": 370, "type": "worm", "movement": "horizontal", "range": 200},
-            {"x": 400, "y": 320, "type": "virus", "movement": "vertical", "range": 50}
-        ],
-        "endpoint": {"x": 700, "y": 220}  # Moved closer to last platform
-    },
-
     # Level 5: Floating islands
     {
-        "name": "Level 5: Cloud Nodes",
+        "name": "Level 3: Cloud Nodes",
         "platforms": [
             {"x": 0, "y": 450, "width": 100, "height": 30},  # Added spawn platform
             {"x": 50, "y": 450, "width": 100, "height": 30},
@@ -126,7 +79,7 @@ levels = [
 
     # Level 6: Maze-like structure
     {
-        "name": "Level 6: Network Maze",
+        "name": "Level 4: Network Maze",
         "platforms": [
             {"x": 0, "y": 450, "width": 100, "height": 30},  # Spawn platform
             {"x": 0, "y": 450, "width": 300, "height": 30},
@@ -157,7 +110,7 @@ levels = [
 
     # Level 7: Vertical challenge
     {
-        "name": "Level 7: Firewall Ascent",
+        "name": "Level 5: Firewall Ascent",
         "platforms": [
             {"x": 0, "y": 450, "width": 100, "height": 30},  # Spawn platform
             {"x": 200, "y": 400, "width": 100, "height": 30},
@@ -185,7 +138,7 @@ levels = [
 
     # Level 8: Narrow platforms
     {
-        "name": "Level 8: Bandwidth Challenge",
+        "name": "Level 6: Bandwidth Challenge",
         "platforms": [
             {"x": 0, "y": 450, "width": 100, "height": 20},  # Wider spawn platform
             {"x": 100, "y": 400, "width": 50, "height": 20},
@@ -211,32 +164,9 @@ levels = [
         "endpoint": {"x": 750, "y": 70}  # Moved closer to last platform
     },
 
-    # Level 9: Moving platforms
-    {
-        "name": "Level 9: Packet Routing",
-        "platforms": [
-            {"x": 0, "y": 450, "width": 150, "height": 30},  # Wider spawn platform
-            {"x": 200, "y": 400, "width": 100, "height": 30, "movement": "horizontal", "range": 200, "speed": 2},
-            {"x": 400, "y": 350, "width": 100, "height": 30, "movement": "vertical", "range": 100, "speed": 1.5},
-            {"x": 600, "y": 300, "width": 150, "height": 30, "movement": "horizontal", "range": 150, "speed": 3},
-            {"x": 700, "y": 250, "width": 100, "height": 30}  # Stationary platform near endpoint
-        ],
-        "collectibles": [
-            {"x": 75, "y": 420},
-            {"x": 250, "y": 370},
-            {"x": 450, "y": 320},
-            {"x": 650, "y": 270}
-        ],
-        "enemies": [
-            {"x": 300, "y": 370, "type": "virus", "movement": "horizontal", "range": 200},
-            {"x": 500, "y": 320, "type": "trojan", "movement": "vertical", "range": 100}
-        ],
-        "endpoint": {"x": 750, "y": 220}  # Moved closer to last platform
-    },
-
     # Level 10: Final challenge
     {
-        "name": "Level 10: System Mastery",
+        "name": "Level 7: System Mastery",
         "platforms": [
             {"x": 0, "y": 450, "width": 150, "height": 30},  # Wider spawn platform
             {"x": 150, "y": 420, "width": 100, "height": 30},
